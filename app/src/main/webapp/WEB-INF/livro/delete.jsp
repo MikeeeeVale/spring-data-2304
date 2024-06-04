@@ -2,8 +2,17 @@
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
-            <a href="/livros/list" class="btn btn-secondary">Voltar</a>
-            <button type="submit" class="btn btn-danger">Remover</button>
+        <meta charset="UTF-8" />
+        <title>Excluir Livro</title>
+    </head>
+    <body>
+        <h1>Remover Livro</h1>
+        <p>Tem certeza que deseja remover o livro${livro.nome}?</p>
+        <form action="/livros/delete" method="post">
+            <input type="hidden" name="id" value="${livro.id}"/>
+
+            <a href="/livros/list">Voltar</a>
+            <button type="submit">Remover</button>
         </form>
         </div>
     </body>
