@@ -14,7 +14,7 @@
 
         
             <a href="/livros/list" class="btn btn-secondary">Voltar</a>
-            <button type="submit">Remover</button>
+            <button type="submit" class="btn btn-danger">Remover</button>
         </form>
         </form>
     </body>
