@@ -4,6 +4,7 @@
     <head>
         <meta charset="UTF-8" />
         <title>Excluir Livro</title>
+        <link href="/css/bootstrap.min.css" rel="stylesheet"/>
     </head>
     <body>
         <h1>Remover Livro</h1>
@@ -11,10 +12,11 @@
         <form action="/livros/delete" method="post">
             <input type="hidden" name="id" value="${livro.id}"/>
 
-            <a href="/livros/list">Voltar</a>
+        
+            <a href="/livros/list" class="btn btn-secondary">Voltar</a>
             <button type="submit">Remover</button>
         </form>
-        </div>
+        </form>
     </body>
 </html>
 

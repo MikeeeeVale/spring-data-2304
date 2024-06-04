@@ -13,6 +13,7 @@
             <a href="/livros/insert" class="btn btn-primary">Novo Livro</a>
             <table class="table">
                 <tr>
+                    <th>Id</th>
                     <th>Titulo</th>
                     <th>Genero</th>
                     <th>&nbsp;</th>
