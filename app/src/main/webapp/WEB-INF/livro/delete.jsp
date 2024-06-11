@@ -3,20 +3,21 @@
 <html lang="pt-br">
     <head>
         <meta charset="UTF-8" />
-        <title>Excluir Livro</title>
-        <link href="/css/bootstrap.min.css" rel="stylesheet"/>
+        <title>Remover Livro</title>
+        <link href="/css/bootstrap.min.css" rel="stylesheet" />
     </head>
     <body>
-        <h1>Remover Livro</h1>
-        <p>Tem certeza que deseja remover o livro${livro.nome}?</p>
-        <form action="/livros/delete" method="post">
-            <input type="hidden" name="id" value="${livro.id}"/>
-
-        
-            <a href="/livros/list" class="btn btn-secondary">Voltar</a>
-            <button type="submit" class="btn btn-danger">Remover</button>
-        </form>
-        </form>
+        <div class="container">
+            <h1>Remover Livro</h1>
+            <form action="/livros/delete" method="post">
+                <input type="hidden" name="id" value="${livro.id}" />
+                <p>Tem certeza que deseja remover o livro ${livro.titulo} ?</p>
+                <hr />
+                <a href="/livros/list" class="btn btn-secondary">Voltar</a>
+                <button type="submit" class="btn btn-danger">Excluir</button>
+            </form>
+        </div>
     </body>
 </html>
-
+ 
+ 
